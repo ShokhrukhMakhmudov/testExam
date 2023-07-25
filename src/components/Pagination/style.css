@@ -1,0 +1,49 @@
+.pagination {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.pag-btn {
+  color: #474955;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 33px;
+  border: none;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+}
+.pag-btn:disabled {
+  opacity: 0.5;
+}
+.pag-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.pag-item {
+  color: #474955;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 137.687%;
+  cursor: pointer;
+}
+.active-page {
+  color: #7ebc3c;
+}
+@media screen and (max-width: 480px) {
+  .pag-btn {
+    font-size: 14px;
+    line-height: 12px;
+  }
+  .pag-list {
+    gap: 5px;
+  }
+  .pag-item {
+    font-size: 10px;
+  }
+}
